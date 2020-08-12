@@ -8,6 +8,7 @@
 <script>
 export default {
   name: 'app',
+  
   provide() {
     return {
       reload: this.reload
@@ -19,6 +20,7 @@ export default {
     }
   },
   methods: {
+    // 刷新页面
     reload() {
       this.isRouterAlive = false;
       this.$nextTick(function() {
@@ -30,6 +32,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+#app {
+  height: 100%;
+}
 </style>
 

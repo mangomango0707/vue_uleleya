@@ -43,9 +43,13 @@ import {
     Link,
     Footer,
     Divider,
-    Avatar
+    Avatar,
+    Carousel,
+    CarouselItem
 } from 'element-ui'
 
+Vue.use(Carousel)
+Vue.use(CarouselItem)
 Vue.use(Avatar)
 Vue.use(Footer)
 Vue.use(Divider)
